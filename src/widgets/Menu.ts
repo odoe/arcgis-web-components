@@ -12,28 +12,10 @@ export default class Menu extends WidgetBase {
 				Link,
 				{
 					to: 'home',
-					classes: [css.link],
-					activeClasses: [css.selected]
+					classes: [ css.link ],
+					activeClasses: [ css.selected ]
 				},
-				['Home']
-			),
-			w(
-				Link,
-				{
-					to: 'about',
-					classes: [css.link],
-					activeClasses: [css.selected]
-				},
-				['About']
-			),
-			w(
-				Link,
-				{
-					to: 'profile',
-					classes: [css.link],
-					activeClasses: [css.selected]
-				},
-				['Profile']
+				[ 'Home' ]
 			)
 		]);
 	}
