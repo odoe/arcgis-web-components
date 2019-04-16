@@ -1,0 +1,8 @@
+{
+  "build-widget": {
+    "elements": [
+      "src/widgets/map-widget/map-widget",
+      "src/widgets/portal-card/portal-card"
+    ]
+  }
+}
