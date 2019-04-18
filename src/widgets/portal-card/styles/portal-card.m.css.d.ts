@@ -6,5 +6,4 @@ export const imagecaption: string;
 export const image: string;
 export const cardwide: string;
 export const cardwideimagewrap: string;
-export const cardwideimage: string;
 export const fontsize1: string;

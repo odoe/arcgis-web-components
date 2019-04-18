@@ -16,10 +16,13 @@
   position: relative;
   background: var(--white);
   box-shadow: 0 0 0 1px var(--transparent-off-white), var(--box-shadow);
+  cursor: pointer;
 }
 
 .imagewrap {
-  width: 100%;
+  min-width: 200px;
+  width: 200px;
+  height: 133px;
   position: relative;
   margin-bottom: 0;
   -webkit-box-flex: 0 0 auto;
@@ -99,22 +102,9 @@
 
 .cardwideimagewrap {
   position: relative;
-  /* top: 0;
-  left: 0;
-  bottom: 0; */
   width: 202px;
   overflow: hidden;
   margin-bottom: 0;
-}
-
-.cardwideimage {
-  width: auto;
-  min-width: 100%;
-  max-width: none;
-  height: 100%;
-  margin: 0;
-  display: block;
-  position: absolute;
 }
 
 .cardwide .content {

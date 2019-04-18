@@ -28,7 +28,7 @@ class HtmlMeta extends MetaBase {
 }
 
 @customElement<MapWidgetProperties>({
-	tag: 'map-widget',
+	tag: 'arcgis-webmap',
 	attributes: ['webmapid', 'widgets'],
 	properties: [],
 	events: ['onChange']

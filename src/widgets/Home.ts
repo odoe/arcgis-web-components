@@ -7,8 +7,10 @@ import PortalCard from './portal-card/portal-card';
 
 export default class Home extends WidgetBase {
 	protected render() {
-		return v('h1', { classes: [ css.root ] }, [
-			'Home Page',
+		return v('div', { classes: [ css.root ] }, [
+			v('h1', {}, [
+				'Home Page'
+			]),
 			w(PortalCard, { itemid: 'db71cf1dae7745789f4555d942a7cca1', onChange: () => {} })
 		]);
 	}
