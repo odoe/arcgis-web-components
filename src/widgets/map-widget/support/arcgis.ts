@@ -34,7 +34,7 @@ export async function initialize({ container, webmapid, onChange, widgets = [] }
         return 'esri/widgets/Legend'
       };
       if (w === 'search') {
-        positions.push('topp-right');
+        positions.push('top-right');
         return 'esri/widgets/Search'
       };
       if (w === 'basemapGallery') {
