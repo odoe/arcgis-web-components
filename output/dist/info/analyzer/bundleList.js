@@ -1,0 +1,1 @@
+window.__bundleList = ["portal-card-1.0.0.js"]
