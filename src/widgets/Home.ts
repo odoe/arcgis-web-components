@@ -4,7 +4,7 @@ import { v, w } from '@dojo/framework/widget-core/d';
 import * as css from './styles/Home.m.css';
 
 import PortalCard from './portal-card/portal-card';
-import MapWidget from './map-widget/map-widget';
+import SceneWidget from './arcgis-widgets/webscene-widget';
 
 export default class Home extends WidgetBase {
 	protected render() {
@@ -12,8 +12,8 @@ export default class Home extends WidgetBase {
 			v('h1', {}, [
 				'Home Page'
 			]),
-			w(PortalCard, { itemid: 'db71cf1dae7745789f4555d942a7cca1', onChange: () => {} }),
-			w(MapWidget, { webmapid: 'db71cf1dae7745789f4555d942a7cca1', widgets: 'legend,search', onChange: () => {} })
+			w(PortalCard, { itemid: '5a392557cffb485f8fe004e668e9edc0', onChange: () => {} }),
+			w(SceneWidget, { websceneid: '5a392557cffb485f8fe004e668e9edc0', widgets: 'areameasurement3d:expand:bottom-left,search', onChange: () => {} })
 		]);
 	}
 }

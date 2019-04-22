@@ -40,6 +40,7 @@ export class MapWidget extends ThemedMixin(WidgetBase)<MapWidgetProperties> {
 		const propWidgets = this.properties.widgets
 		const widgets = Array.isArray(propWidgets) ? propWidgets : (typeof propWidgets === "string" ? propWidgets.split(",") : []);
 		initialize({
+			type: '2d',
 			container,
 			webmapid: this.properties.webmapid,
 			onChange: this.properties.onChange,

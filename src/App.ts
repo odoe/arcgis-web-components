@@ -11,7 +11,7 @@ export default class App extends WidgetBase {
 	protected render() {
 		return v('div', { classes: [ css.root ] }, [
 			w(Menu, {}),
-			v('div', [ w(Outlet, { key: 'home', id: 'home', renderer: () => w(Home, {}) }) ])
+			v('div', { classes: [ css.root ] }, [ w(Outlet, { key: 'home', id: 'home', renderer: () => w(Home, {}) }) ])
 		]);
 	}
 }

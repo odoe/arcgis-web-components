@@ -1,6 +1,68 @@
-# map-view-web-component
+# arcgis-web-components
 
 This project was generated with the [Dojo CLI](https://github.com/dojo/cli) & [Dojo CLI create app command](https://github.com/dojo/cli-create-app).
+
+## Usage
+
+Add the JavaScript and CSS for the WebMap custom element to your page.
+
+For WebMaps:
+
+```html
+<link rel="stylesheet" href="https://odoe.github.io/arcgis-web-components/output/dist/webmap-widget/webmap-widget-1.0.0.css" />
+<script src="https://odoe.github.io/arcgis-web-components/output/dist/webmap-widget/webmap-widget-1.0.0.js"></script>
+```
+
+For WebScenes:
+
+```html
+<link rel="stylesheet" href="https://odoe.github.io/arcgis-web-components/output/dist/webscene-widget/webscene-widget-1.0.0.css" />
+<script src="https://odoe.github.io/arcgis-web-components/output/dist/webscene-widget/webscene-widget-1.0.0.js"></script>
+```
+
+Then you can add the element to your page.
+
+```html
+<arcgis-webmap webmapid="51378bf1746e4bbaa5de7fe7a148303c" widgets="legend:expand:bottom-left,search::top-right"/>
+```
+
+The options are:
+
+* `webmapid`: The WebMap id of the ArcGIS Online map you want to display.
+* `widgets`: Comma delmited string of widgets to use.
+  - Use `:` to define widget options in the following format.
+    - `widgetname:in-expand-widget;position`
+    - If you want to place a widget without expand, leave the option empty, like `search::top-right`
+    - Default position is `top-right` if none provided
+
+Valid widget options are:
+
+```js
+  "areameasurement2d",
+  "areameasurement3d",
+  "basemapgallery",
+  "basemaptoggle",
+  "bookmarks",
+  "compass",
+  "coordinateconversion",
+  "directions",
+  "directlinemeasurement3d",
+  "distancemeasurement2d",
+  "editor",
+  "featureform",
+  "featuretemplates",
+  "home",
+  "layerlist",
+  "legend",
+  "locate",
+  "navigationtoggle",
+  "print",
+  "scalebar",
+  "search",
+  "sketch",
+  "slice",
+  "track"
+```
 
 ## Build
 
